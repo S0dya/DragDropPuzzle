@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1eb1cddb751451292700131b36883ec, type: 3}
+  m_Name: AdConfig
+  m_EditorClassIdentifier: Assembly-CSharp::PT.Logic.Configs.AdConfig
+  breakFromAdsDuration: 60
+  bannerHeightPx: 130
+  bannerEnabled: 0
+  gameIdAndroid: 6042009
+  interstitialVideoAndroid: Interstitial_Android
+  rewardedVideoAndroid: Rewarded_Android
+  bannerAndroid: Banner_Android
+  gameIdIOS: 6042008
+  interstitialVideoIOS: Interstitial_iOS
+  rewardedVideoIOS: Rewarded_iOS
+  bannerIOS: Banner_iOS

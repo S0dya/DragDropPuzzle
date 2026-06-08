@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Game/General/Scenes/PersistentScene.unity
+    guid: a8443d183df4a1e4d986b7e6860503a7
+  - enabled: 1
+    path: Assets/Game/General/Scenes/MenuScene.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Game/General/Scenes/GameScene.unity
+    guid: 8fa22983f58534246a4bac3c441a08dd
+  m_configObjects:
+    com.unity.adaptivePerformance.basic.provider_settings: {fileID: 11400000, guid: 5345951f30bdf394f89de5e07a5e094b, type: 2}
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 45afc728cac32774ab6c80606a99cd30, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 6946eaad9bbee9347b202c424f1e9f4c, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 0aa06b32fd838e84983c5ce6fdab8007, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 629fb645df383d9409e523574cc14e22, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 7b107f518d00dd94d820f3d01f3e75df, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 8a287806fc1e4a84da421aa8f6e4982f, type: 2}
+  m_UseUCBPForAssetBundles: 0

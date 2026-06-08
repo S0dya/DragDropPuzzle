@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c7dd9df9-05b0-43c9-b8c3-aacbc003bafc}">
+		<property name="assetPath">
+			<value>SFX/PUZZLE_Success_Guitar_2_Very_Fast_Three_Note_Delay_stereo.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.6039909297052155</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3d160a81-d6dd-41b0-b9cd-419fdeabd108}</destination>
+		</relationship>
+	</object>
+</objects>

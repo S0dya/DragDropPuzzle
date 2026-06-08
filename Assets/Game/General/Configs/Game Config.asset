@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d14304fc0045eb9e7825470736c7f2, type: 3}
+  m_Name: Game Config
+  m_EditorClassIdentifier: 
+  platformType: 2
+  loadingAnimationDuration: 0.01
+  addressablesDiagnosticsInterval: 60
+  cloudSaveCooldownSeconds: 120
+  lowestBallYOffset: 1
+  gameEndDelay: 1.5
+  vocalsRampSeconds: 0.25
+  songEndingBeforeFinishSeconds: 5
+  minSingersAmount: 2
+  maxSingersAmount: 4
+  maxTotalSingersAmount: 15
+  levelChunksOpeningYOffset: 15
+  levelChunksInitialEnabled: 3
+  levelChunksTopDisableStep: 3
+  pushSlowMoScale: 0.2
+  pushSlowMoInDuration: 0.5
+  pushPower: 15
+  pushMaxDuration: 2
+  pushCooldownDuration: 3
+  trajectoryPoints: 50
+  trajectoryTimeStep: 0.05

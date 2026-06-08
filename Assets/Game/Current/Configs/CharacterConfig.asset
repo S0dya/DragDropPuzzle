@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4db6693342e42538d1ad4be276777a9, type: 3}
+  m_Name: CharacterConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.BallDrop.Configs.CharacterConfig
+  characterDatas:
+  - characterName: 0
+    characterSprite: {fileID: -7441139868736287282, guid: 5f9ccb072ac08034192437798cfe69f6, type: 3}
+    ballSprite: {fileID: -3919779002189068522, guid: 821ad2383cc902e41822125e7acb466f, type: 3}
+    characterNameKey: "\u0410\u0440\u0442\u0443\u0440"
+    characterColor: {r: 1, g: 1, b: 1, a: 1}
+  - characterName: 6
+    characterSprite: {fileID: 8431077267506978619, guid: d03588b97afea5848b13c983b314a5ee, type: 3}
+    ballSprite: {fileID: -3827822585150400677, guid: e44993f3c8dcd814bb6672086782bcf2, type: 3}
+    characterNameKey: "\u041B\u0438\u043E\u043D"
+    characterColor: {r: 0.10980393, g: 0.6666667, b: 0, a: 1}
+  - characterName: 7
+    characterSprite: {fileID: -8100338308336029728, guid: f81eb2c9ebf42414198498e0316f14c1, type: 3}
+    ballSprite: {fileID: 4868525288685083015, guid: a6bf92baf7c7709489980da664a4c08e, type: 3}
+    characterNameKey: "\u0421\u0438\u0440\u0435\u043D\u0430"
+    characterColor: {r: 0.3921569, g: 0.19607845, b: 0.11764707, a: 1}
+  - characterName: 8
+    characterSprite: {fileID: -3135862599741438771, guid: 6dfebf9b60fe4be42a48fdc3b523cedc, type: 3}
+    ballSprite: {fileID: 2135474434354041300, guid: 7d22b260ae2c75547a0aa2dff1b44d8b, type: 3}
+    characterNameKey: "\u041C\u043E\u0440\u0442\u0438"
+    characterColor: {r: 0.9333334, g: 0, b: 1, a: 1}
+  - characterName: 9
+    characterSprite: {fileID: -7509862883706535243, guid: 8bc75b0ff36113c429c3ebacd9d216d3, type: 3}
+    ballSprite: {fileID: 5399861723748090208, guid: 9486b243fc664ee4887e0a40b6b981bd, type: 3}
+    characterNameKey: "\u0411\u0430\u043B\u0434\u0438\u043A"
+    characterColor: {r: 0.16470589, g: 1, b: 0, a: 1}
+  - characterName: 10
+    characterSprite: {fileID: -6142402189575997610, guid: 692c7f30389351444a5b6a6dd6cdf803, type: 3}
+    ballSprite: {fileID: -5592884549953807747, guid: 6d6df0eaed5a4384e9c42f234becd7ee, type: 3}
+    characterNameKey: "\u0425\u0430\u0433\u0438\u043A"
+    characterColor: {r: 0.10196079, g: 0, b: 0.6666667, a: 1}
+  - characterName: 11
+    characterSprite: {fileID: -620148340906663053, guid: f9eca1d5f2ff5f0418966ea6c0cb5837, type: 3}
+    ballSprite: {fileID: -3368566234724393249, guid: 75733c54ebf82a24585bda46a05f857a, type: 3}
+    characterNameKey: "\u0428\u0435\u043B\u0438"
+    characterColor: {r: 0.19607845, g: 0, b: 0.28235295, a: 1}
+  - characterName: 14
+    characterSprite: {fileID: -1459998344874016079, guid: bbe28b6bbdb8ce64a8a2c0f6750cc62f, type: 3}
+    ballSprite: {fileID: -684411645665819289, guid: d476c4414af4d664ea8beaab99c32333, type: 3}
+    characterNameKey: "\u041F\u0435\u0442\u0435\u0440"
+    characterColor: {r: 1, g: 1, b: 1, a: 1}
+  - characterName: 12
+    characterSprite: {fileID: -9025746082198673843, guid: 80e704f22a69b8d418da848c1d6fb3c9, type: 3}
+    ballSprite: {fileID: 6621070684223391730, guid: 784f5b83685bf4a4dabf748492c04b07, type: 3}
+    characterNameKey: "\u0416\u0430\u0431\u0443\u0431\u0443"
+    characterColor: {r: 0.9333334, g: 1, b: 0, a: 1}
+  - characterName: 13
+    characterSprite: {fileID: 7017958009989067711, guid: 77bd76c9359431140b485c331df25db2, type: 3}
+    ballSprite: {fileID: -1334656242509087449, guid: ec201f68a1a28c34b8cf173d40e85c19, type: 3}
+    characterNameKey: "\u041B\u0430\u0431\u0443\u0431\u0443"
+    characterColor: {r: 0.5411765, g: 0, b: 0.27058825, a: 1}

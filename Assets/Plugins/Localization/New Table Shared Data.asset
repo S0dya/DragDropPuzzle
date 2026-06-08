@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: New Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: New Table
+  m_TableCollectionNameGuidString: e2d8512f3d5c38946af8eca9597fa680
+  m_Entries:
+  - m_Id: 22296296119164928
+    m_Key: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885184
+    m_Key: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885185
+    m_Key: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885186
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752254464001
+    m_Key: GameOver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22297385031786496
+    m_Key: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752250269696
+    m_Key: Loading.Loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10032603136
+    m_Key: Settings.Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752250269697
+    m_Key: GamePause.Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752250269698
+    m_Key: GamePause.Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4646869229568
+    m_Key: GameOver.Replay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 360596910202881
+    m_Key: GameOver.LeaveToMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752254464002
+    m_Key: GameEnd.NextLevel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752254464003
+    m_Key: GameEnd.RewardAd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752254464004
+    m_Key: GameEnd.LeaveToMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885187
+    m_Key: Settings.Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885188
+    m_Key: Settings.Vibro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885189
+    m_Key: Settings.Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865290678272
+    m_Key: Menu.Navigation.Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865382952960
+    m_Key: Menu.Navigation.Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865382952961
+    m_Key: Menu.Navigation.Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865382952962
+    m_Key: Menu.Navigation.Info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865382952963
+    m_Key: Menu.Navigation.Leaderboards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163076182016
+    m_Key: Pause.Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068096
+    m_Key: Pause.Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068097
+    m_Key: GameEndRewardView.Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068098
+    m_Key: GameEndView.Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068099
+    m_Key: GameoverReviveView.Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068100
+    m_Key: MenuSettings.Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068101
+    m_Key: Leaderboards.Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068102
+    m_Key: Leaderboards.TopPlayers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068103
+    m_Key: Leaderborads.NewRecord
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29219166577582080
+    m_Key: GameOver.ReviveButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 360596910202880
+    m_Key: GameOver.RewardAd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689899888640
+    m_Key: Game.RestoreMegaMerge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27133283401555968
+    m_Key: GameIntro.ConditionsCompleting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28609870009556992
+    m_Key: Game.Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33331164005359616
+    m_Key: Gameover.Skip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33983605478612992
+    m_Key: GameVictory.Collected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33983605554110464
+    m_Key: GameVictory.WatchAdWheel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637376
+    m_Key: Game.UndoAd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637377
+    m_Key: Game.ChainText1.Nice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637378
+    m_Key: Game.ChainText2.Well Done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637379
+    m_Key: Game.ChainText3.Amazing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637380
+    m_Key: Game.ChainText4.Great
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637381
+    m_Key: Game.ChainText5.Unbelievable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637382
+    m_Key: Game.Progress.Current
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637383
+    m_Key: Game.Progress.Prev
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637384
+    m_Key: Game.Progress.Goal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63005188470796288
+    m_Key: Game.SkillAd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71688622105882624
+    m_Key: Game.MegaMerge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71688622214934528
+    m_Key: Game.MegaMerge.Ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94518241518247936
+    m_Key: Game.ChooseSingers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94518241602134016
+    m_Key: Game.ChooseSong
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7098126304151076866
+  references:
+    version: 2
+    RefIds:
+    - rid: 7098126304151076866
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1752363410494

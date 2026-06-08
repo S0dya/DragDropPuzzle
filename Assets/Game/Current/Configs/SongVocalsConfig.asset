@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2091996a2eb42c29c1cc3b0488dde6e, type: 3}
+  m_Name: SongVocalsConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.BallDrop.Configs.SongVocalsConfig
+  songVocals:
+    keys: 
+    keyValueClasses:
+    - key: 4
+      value:
+      - character: 6
+        asset: 35
+      - character: 9
+        asset: 17
+      - character: 7
+        asset: 31
+      - character: 10
+        asset: 19
+      - character: 8
+        asset: 23
+      - character: 0
+        asset: 15
+      - character: 13
+        asset: 25
+    - key: 5
+      value:
+      - character: 9
+        asset: 16
+      - character: 12
+        asset: 32
+      - character: 11
+        asset: 28
+      - character: 13
+        asset: 36
+    - key: 6
+      value:
+      - character: 6
+        asset: 22
+      - character: 10
+        asset: 20
+      - character: 13
+        asset: 26
+      - character: 8
+        asset: 24
+      - character: 11
+        asset: 29
+      - character: 12
+        asset: 34
+    - key: 7
+      value:
+      - character: 6
+        asset: 21
+      - character: 10
+        asset: 21
+      - character: 7
+        asset: 30
+      - character: 14
+        asset: 27
+      - character: 12
+        asset: 33

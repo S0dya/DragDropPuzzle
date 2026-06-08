@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba5c50eedb0e4033903cf3314913695d, type: 3}
+  m_Name: LeaderboardConfig
+  m_EditorClassIdentifier: Assembly-CSharp::PT.Tools.Leaderboard.LeaderboardConfig
+  leaderboardType: 0
+  topAmount: 10
+  aroundPlayerAmount: 15
+  leaderboardId: 746562650434
+  firebaseRankWindowFetch: 200
+  entries:
+    keys:
+    - "Fred J\xE9r\xE9mie "
+    - Candy
+    - AzarPort
+    - amelia
+    - "\u2022pao\u2022 "
+    - "!Ax\u0190L "
+    - Clover
+    - 'Bola 8 '
+    - Blastoise356
+    - "Ch\xE8vre"
+    values: 06120f00000000004d410e0000000000adc40d0000000000015a0d0000000000c2d70c0000000000c7320c00000000007aa40b000000000016000b000000000071860a0000000000e3cb090000000000
+    keyValueClasses: []
+  initialPlayerName: You
+  playerId: Player
+  initialPlayerRank: 9000
+  scoreAddition: {x: 1, y: 40}
+  rankAdditionDelta: 1

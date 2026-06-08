@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RewardWheelAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: d09ff5a0b3624bb4c90c05f83e62618b, type: 3}
+    - {fileID: 2800000, guid: dd5abd450afd69647a8862e75303b1f0, type: 3}
+    - {fileID: 2800000, guid: 8fd04cd978bbb8743addb327af9c4084, type: 3}
+    - {fileID: 2800000, guid: 5acec99b324b004468dde436786f1dc4, type: 3}
+    - {fileID: 2800000, guid: 618de0f2b10d3ec41bfc1af18ead7ebf, type: 3}
+    - {fileID: 2800000, guid: fd30df4b29fb33a48ba39d80c52a03b7, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - d09ff5a0b3624bb4c90c05f83e62618b: 21300000
+    - 618de0f2b10d3ec41bfc1af18ead7ebf: 21300000
+    - dd5abd450afd69647a8862e75303b1f0: 21300000
+    - 8fd04cd978bbb8743addb327af9c4084: 21300000
+    - fd30df4b29fb33a48ba39d80c52a03b7: 21300000
+    - 5acec99b324b004468dde436786f1dc4: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d09ff5a0b3624bb4c90c05f83e62618b, type: 3}
+  - {fileID: 21300000, guid: 618de0f2b10d3ec41bfc1af18ead7ebf, type: 3}
+  - {fileID: 21300000, guid: dd5abd450afd69647a8862e75303b1f0, type: 3}
+  - {fileID: 21300000, guid: 8fd04cd978bbb8743addb327af9c4084, type: 3}
+  - {fileID: 21300000, guid: fd30df4b29fb33a48ba39d80c52a03b7, type: 3}
+  - {fileID: 21300000, guid: 5acec99b324b004468dde436786f1dc4, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - circle_gauge
+  - EnglishLanguage
+  - circle_stroke
+  - SimpleArrow
+  - RusLanguage
+  - WatchAdWheel
+  m_RenderDataMap: {}
+  m_Tag: RewardWheelAtlas
+  m_IsVariant: 0

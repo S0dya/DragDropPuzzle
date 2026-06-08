@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c0d91b7dbc040ddad93bbece06f1eda, type: 3}
+  m_Name: LengthLevelsConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.BallDrop.Configs.LengthLevelsConfig
+  levelsDatas:
+    keys: 000000000100000002000000
+    values:
+    - obstaclesAmountRange: {x: 36, y: 40}
+      transitionsAmountRange: {x: 32, y: 40}
+    - obstaclesAmountRange: {x: 36, y: 40}
+      transitionsAmountRange: {x: 32, y: 40}
+    - obstaclesAmountRange: {x: 36, y: 40}
+      transitionsAmountRange: {x: 32, y: 40}
+    keyValueClasses: []
+  obstacleChunks:
+  - {fileID: 4965538968173385582, guid: 039fa03ce85b09d45b9a5a39b2d05a51, type: 3}
+  - {fileID: 6436530313821509957, guid: ac86948cd3748f74cb6b743b7c2f7b20, type: 3}
+  - {fileID: 1078362957628722704, guid: 0b98be0fe7c79584f82190fccd17a42d, type: 3}
+  - {fileID: 3852612263256749303, guid: f791951aec13b1a47ad535eab445286b, type: 3}
+  - {fileID: 7096337532643455141, guid: 19b50bf17735d494fbd72a7692784799, type: 3}
+  - {fileID: 8396483861989538557, guid: ac1c03a22ec252844a5abddc7f2b2e94, type: 3}
+  - {fileID: 7946343304301080725, guid: fad1f1b9cd5220f43b98eff74bc8bfa8, type: 3}
+  - {fileID: 8104161942221812791, guid: 261f907bbae950543a9b263f07512e63, type: 3}
+  transitionChunks:
+  - {fileID: 5157952562468123157, guid: 58b43f3e5279d25439a897595107f28f, type: 3}
+  - {fileID: 1138614227799280142, guid: dd6f45df719b1bb48a68e302a60ab010, type: 3}
+  - {fileID: 1313479585902199751, guid: cecb80e4ad142374cbb8391d230e310c, type: 3}
+  - {fileID: 3514960593306266091, guid: 88e2db08609673b4089039e7c8318f8c, type: 3}

@@ -1,0 +1,239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: New Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: e2d8512f3d5c38946af8eca9597fa680, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10032603136
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4646869229568
+    m_Localized: Replay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752254464004
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752254464003
+    m_Localized: Watch Ad to receive rewards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752254464002
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752254464001
+    m_Localized: GameOver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752250269698
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752250269697
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291752250269696
+    m_Localized: Loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 360596910202880
+    m_Localized: Watch an ad to clear the board and play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 360596910202881
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296119164928
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885184
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885185
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885186
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885187
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885188
+    m_Localized: Vibration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22296296177885189
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22297385031786496
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27133283401555968
+    m_Localized: Clear every condition to win this level!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28609870009556992
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29219166577582080
+    m_Localized: Clear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33331164005359616
+    m_Localized: Skip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33983605478612992
+    m_Localized: Collected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33983605554110464
+    m_Localized: Watch Ad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689899888640
+    m_Localized: Restore Mega-Merge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637376
+    m_Localized: Watch an ad to get 5 Undos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637377
+    m_Localized: Nice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637378
+    m_Localized: Well Done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637379
+    m_Localized: Amazing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637380
+    m_Localized: Great
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637381
+    m_Localized: Unbelievable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637382
+    m_Localized: Current
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637383
+    m_Localized: Prev
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62929689937637384
+    m_Localized: Goal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63005188470796288
+    m_Localized: Watch an Ad to get 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865290678272
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865382952960
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865382952961
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865382952962
+    m_Localized: Info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69744865382952963
+    m_Localized: Leaders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163076182016
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068096
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068097
+    m_Localized: Reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068098
+    m_Localized: Finish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068099
+    m_Localized: Revive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068100
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068101
+    m_Localized: Leaderboards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068102
+    m_Localized: Top Players
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71678163160068103
+    m_Localized: New Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71688622105882624
+    m_Localized: Mega Merge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71688622214934528
+    m_Localized: Ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94518241518247936
+    m_Localized: Choose Singers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94518241602134016
+    m_Localized: Choose Song
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

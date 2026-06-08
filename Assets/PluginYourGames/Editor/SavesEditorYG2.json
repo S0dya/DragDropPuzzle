@@ -1,0 +1,39 @@
+{
+    "idSave": 11,
+    "IntKeys": [
+        "HighestScore",
+        "LevelIndex",
+        "Gold",
+        "SkillSwap",
+        "SkillDestroy",
+        "LeaderboardPlayerRank",
+        "UnlockedSongs",
+        "UnlockedSingers"
+    ],
+    "IntValues": [
+        0,
+        0,
+        150,
+        3,
+        3,
+        9000,
+        1100,
+        1000
+    ],
+    "FloatKeys": [],
+    "FloatValues": [],
+    "BoolKeys": [
+        "SoundOn",
+        "VibroOn"
+    ],
+    "BoolValues": [
+        true,
+        true
+    ],
+    "StringKeys": [
+        "Language"
+    ],
+    "StringValues": [
+        "Ru"
+    ]
+}
