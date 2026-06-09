@@ -1,3 +1,4 @@
+using Gameplay.DragDropPuzzle.Data;
 using UnityEngine;
 
 namespace Gameplay.DragDropPuzzle.Configs

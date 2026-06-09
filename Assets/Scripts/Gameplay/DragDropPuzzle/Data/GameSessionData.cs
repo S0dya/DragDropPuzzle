@@ -1,4 +1,4 @@
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Data
 {
     public class GameSessionData
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Managers
 {
     public class ParticleEffectPlayer : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Data
 {
     [Serializable]
     public class ItemData

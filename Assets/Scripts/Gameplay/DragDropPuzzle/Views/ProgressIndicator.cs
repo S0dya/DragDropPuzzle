@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Views
 {
     public class ProgressIndicator : MonoBehaviour
     {

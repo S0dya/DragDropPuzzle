@@ -1,17 +1,18 @@
 using System;
-using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using Gameplay.DragDropPuzzle.Data;
+using PT.Logic.Configs;
 using UnityEngine;
+using Zenject;
 
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Components
 {
     public class DraggableItem : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer spriteRenderer;
-        [SerializeField] private float snapDistance = 1f;
-        [SerializeField] private float snapSpeed = 15f;
-        [SerializeField] private float unsnapDistance = 1.5f;
         [SerializeField] private Camera cam;
+        
+        [Inject] private GameConfig _gameConfig;
         
         private ItemData _itemData;
         private Vector2 _originalPosition;
@@ -53,7 +54,7 @@ namespace Gameplay.DragDropPuzzle
             if (_isSnapped)
             {
                 float distance = Vector2.Distance(transform.position, _snapTargetPosition);
-                if (distance > unsnapDistance)
+                if (distance > _gameConfig.UnsnapDistance)
                 {
                     Unsnap();
                 }
@@ -79,7 +80,7 @@ namespace Gameplay.DragDropPuzzle
             Vector2 worldPosition = cam.ScreenToWorldPoint(screenPosition);
             
             float distance = Vector2.Distance(worldPosition, targetPosition);
-            return distance <= snapDistance;
+            return distance <= _gameConfig.SnapDistance;
         }
 
         public void SnapTo(Vector2 position)
@@ -92,9 +93,9 @@ namespace Gameplay.DragDropPuzzle
         {
             if (!_isSnapped || _isLocked) return;
             
-            transform.position = Vector2.Lerp(transform.position, _snapTargetPosition, snapSpeed * Time.deltaTime);
+            transform.position = Vector2.Lerp(transform.position, _snapTargetPosition, _gameConfig.SnapSpeed * Time.deltaTime);
             
-            if (Vector2.Distance(transform.position, _snapTargetPosition) < 0.01f)
+            if (Vector2.Distance(transform.position, _snapTargetPosition) < _gameConfig.SnapTolerance)
             {
                 transform.position = _snapTargetPosition;
             }
@@ -105,13 +106,15 @@ namespace Gameplay.DragDropPuzzle
             _isSnapped = false;
         }
 
-        public void AnimateTo(Vector2 position, float duration = 0.3f, Action onComplete = null)
+        public void AnimateTo(Vector2 position, float duration = 0f, Action onComplete = null)
         {
             if (_isLocked) return;
             
             _isDragging = false;
             
-            transform.DOMove(position, duration)
+            float animDuration = duration > 0 ? duration : _gameConfig.AnimationDuration;
+            
+            transform.DOMove(position, animDuration)
                 .SetEase(Ease.OutBack)
                 .OnComplete(() =>
                 {
@@ -123,13 +126,13 @@ namespace Gameplay.DragDropPuzzle
                 });
         }
 
-        public async void ReturnToOriginal(Vector2 returnPosition)
+        public void ReturnToOriginal(Vector2 returnPosition)
         {
             if (_isLocked) return;
             
             _isDragging = false;
             
-            transform.DOMove(returnPosition, 0.3f)
+            transform.DOMove(returnPosition, _gameConfig.AnimationDuration)
                 .SetEase(Ease.OutBack)
                 .OnComplete(() =>
                 {

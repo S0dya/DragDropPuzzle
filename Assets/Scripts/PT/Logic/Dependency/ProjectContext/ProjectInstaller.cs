@@ -1,4 +1,5 @@
 using Gameplay.DragDropPuzzle;
+using Gameplay.DragDropPuzzle.Data;
 using PT.GameplayAdditional.Progression;
 using PT.Logic.Dependency.Signals;
 using Zenject;

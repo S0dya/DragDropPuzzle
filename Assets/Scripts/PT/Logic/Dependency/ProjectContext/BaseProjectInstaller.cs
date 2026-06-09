@@ -19,10 +19,8 @@ using PT.Tools.TimeRelated;
 using PT.Tools.Vibrations;
 using UnityEngine;
 using Zenject;
-using PT.Backend.FB;
 using PT.Backend.Interfaces;
 using PT.Tools.Leaderboard;
-using PT.Backend.GP;
 using PT.Backend.YG;
 using PT.Logic.PlatformRelated;
 using PT.Logic.PlatformRelated.Web;
@@ -80,17 +78,17 @@ namespace PT.Logic.Dependency.ProjectContext
             Container.Bind<ISaveService>().To<PrefsSave>().AsSingle();
             Container.BindInterfacesAndSelfTo<UnityAds>().AsSingle();
             
-            #if !UNITY_EDITOR
-            Container.Bind<FirebaseBackendService>().AsSingle();
-            Container.Bind<IBackendService>().To<FirebaseBackendService>().FromResolve();
-            
-            Container.Bind<IAnalyticsService>().To<FirebaseAnalyticsService>().AsSingle();
-            Container.Bind<IRemoteConfigService>().To<FirebaseRemoteConfigService>().AsSingle();
-            Container.Bind<ICloudSaveService>().To<FirebaseCloudSaveService>().AsSingle();
-            Container.Bind<IDatabaseService>().To<FirebaseDatabaseService>().AsSingle();
-            
-            Container.QueueForInject(_gameConfig);//myb remove
-            #endif
+            // #if !UNITY_EDITOR
+            // Container.Bind<FirebaseBackendService>().AsSingle();
+            // Container.Bind<IBackendService>().To<FirebaseBackendService>().FromResolve();
+            //
+            // Container.Bind<IAnalyticsService>().To<FirebaseAnalyticsService>().AsSingle();
+            // Container.Bind<IRemoteConfigService>().To<FirebaseRemoteConfigService>().AsSingle();
+            // Container.Bind<ICloudSaveService>().To<FirebaseCloudSaveService>().AsSingle();
+            // Container.Bind<IDatabaseService>().To<FirebaseDatabaseService>().AsSingle();
+            //
+            // Container.QueueForInject(_gameConfig);//myb remove
+            // #endif
 #endif
 
             SignalBusInstaller.Install(Container);
@@ -122,14 +120,14 @@ namespace PT.Logic.Dependency.ProjectContext
                     Container.BindInterfacesAndSelfTo<FakeLeaderboardService>().AsSingle();
                     break;
 #if (UNITY_IOS || UNITY_ANDROID) && !UNITY_EDITOR
-                case LeaderboardType.Firebase:
-                    Container.Bind<IAuthentificationService>().To<FirebaseAuthentificationService>().AsSingle();
-                    Container.Bind<ILeaderboardService>().To<DatabaseLeaderboardService>().AsSingle();
-                    break;
-                case LeaderboardType.GooglePlayGames:
-                    Container.Bind<IAuthentificationService>().To<GooglePlayAuthentificationService>().AsSingle();
-                    Container.Bind<ILeaderboardService>().To<GooglePlayLeaderboardService>().AsSingle();
-                    break;
+                // case LeaderboardType.Firebase:
+                //     Container.Bind<IAuthentificationService>().To<FirebaseAuthentificationService>().AsSingle();
+                //     Container.Bind<ILeaderboardService>().To<DatabaseLeaderboardService>().AsSingle();
+                //     break;
+                // case LeaderboardType.GooglePlayGames:
+                //     Container.Bind<IAuthentificationService>().To<GooglePlayAuthentificationService>().AsSingle();
+                //     Container.Bind<ILeaderboardService>().To<GooglePlayLeaderboardService>().AsSingle();
+                //     break;
 #elif UNITY_WEBGL
                 case LeaderboardType.YandexGames: 
                     // Container.Bind<IAuthentificationService>().To<YandexAuthentificationService>().AsSingle();

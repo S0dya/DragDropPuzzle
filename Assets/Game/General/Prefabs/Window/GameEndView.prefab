@@ -1665,8 +1665,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1695049342159202186, guid: 062adf9b6d2ce3243ab1ffb4fbd0abdc, type: 3}
+      propertyPath: m_text
+      value: Header
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695049342159202186, guid: 062adf9b6d2ce3243ab1ffb4fbd0abdc, type: 3}
       propertyPath: m_fontSize
       value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695049342159202186, guid: 062adf9b6d2ce3243ab1ffb4fbd0abdc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a11bc0980111f6498e8ffe04219b040, type: 2}
+    - target: {fileID: 1695049342159202186, guid: 062adf9b6d2ce3243ab1ffb4fbd0abdc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5536597641735308749, guid: 0a11bc0980111f6498e8ffe04219b040, type: 2}
+    - target: {fileID: 1695049342159202186, guid: 062adf9b6d2ce3243ab1ffb4fbd0abdc, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2327390674182365436, guid: 062adf9b6d2ce3243ab1ffb4fbd0abdc, type: 3}
       propertyPath: m_Sprite

@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
+using Gameplay.DragDropPuzzle.Data;
 using UnityEngine;
 
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Configs
 {
     [CreateAssetMenu(menuName = "Configs/PuzzleLevelConfig", fileName = "PuzzleLevelConfig")]
     public class PuzzleLevelConfig : ScriptableObject

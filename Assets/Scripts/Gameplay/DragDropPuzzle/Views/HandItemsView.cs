@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
+using Gameplay.DragDropPuzzle.Data;
 using PT.Tools.Debugging;
 using PT.Tools.Helper;
+using PT.Logic.Configs;
 using UnityEngine;
 using UnityEngine.Pool;
+using Zenject;
 
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Views
 {
     public class HandItemsView : MonoBehaviour
     {
@@ -15,11 +18,12 @@ namespace Gameplay.DragDropPuzzle
 
         public event Action<ItemData, Vector2> OnItemSelected;
         
+        [Inject] private GameConfig _gameConfig;
+        
         private List<HandItemView> _activeHandItemViews = new(); 
         private Dictionary<ItemData, int> _itemPositions = new();
         
         private ObjectPool<HandItemView> _handItemViewPool;
-        private int _totalItemCount;
         
         private void Start()
         {
@@ -27,7 +31,7 @@ namespace Gameplay.DragDropPuzzle
                 CreateHandItemView,
                 obj => obj.SetActive(true),
                 obj => obj.SetActive(false),
-                defaultCapacity: 20
+                defaultCapacity: _gameConfig.HandItemPoolCapacity
             );
         }
 
@@ -41,7 +45,6 @@ namespace Gameplay.DragDropPuzzle
         public void SetItems(List<ItemData> itemDatas)
         {
             ClearItems();
-            _totalItemCount = itemDatas.Count;
             
             for (int i = 0; i < itemDatas.Count; i++)
             {

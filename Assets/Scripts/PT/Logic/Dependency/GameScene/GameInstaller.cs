@@ -1,12 +1,14 @@
 using Gameplay;
+using Gameplay.Analytics;
 using Gameplay.DragDropPuzzle;
+using Gameplay.DragDropPuzzle.Components;
+using Gameplay.DragDropPuzzle.Managers;
+using Gameplay.DragDropPuzzle.Views;
 using PT.Backend.Interfaces;
 using PT.GameplayAdditional.Cameras;
 using PT.GameplayAdditional.Vibrations;
-using PT.Logic.Configs;
 using PT.Tools.Tutorials;
 using PT.UI.Windows;
-using UnityEngine;
 using Zenject;
 
 namespace PT.Logic.Dependency.GameScene

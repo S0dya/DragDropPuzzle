@@ -1,9 +1,10 @@
 using System;
+using Gameplay.DragDropPuzzle.Data;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Views
 {
     public class HandItemView : MonoBehaviour, IPointerDownHandler
     {

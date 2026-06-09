@@ -1,9 +1,8 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using Cysharp.Threading.Tasks;
 using Gameplay.DragDropPuzzle.Configs;
-using PT.Logic.Configs;
+using Gameplay.DragDropPuzzle.Data;
+using Gameplay.DragDropPuzzle.Views;
 using PT.Logic.PersistentScene;
 using PT.Logic.ProjectContext;
 using PT.Tools.Factories;
@@ -12,7 +11,7 @@ using PT.UI.Windows;
 using UnityEngine;
 using Zenject;
 
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Managers
 {
     public class PuzzleGameManager : MonoBehaviour
     {

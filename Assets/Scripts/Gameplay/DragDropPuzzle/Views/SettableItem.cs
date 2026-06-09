@@ -1,10 +1,12 @@
 using Gameplay.DragDropPuzzle.Configs;
+using Gameplay.DragDropPuzzle.Data;
+using PT.Logic.Configs;
 using PT.Tools.Debugging;
 using PT.Tools.Helper;
 using UnityEngine;
 using Zenject;
 
-namespace Gameplay.DragDropPuzzle
+namespace Gameplay.DragDropPuzzle.Views
 {
     public class SettableItem : MonoBehaviour
     {
@@ -12,10 +14,9 @@ namespace Gameplay.DragDropPuzzle
         [Space]
         [SerializeField] private SpriteRenderer blankSr;
         [SerializeField] private SpriteRenderer filledSr;
-        [Space]
-        [SerializeField] private Color highlightColor = Color.yellow;
         
         [Inject] private ItemsConfig _itemsConfig;
+        [Inject] private GameConfig _gameConfig;
         
         private ItemData _itemData;
         private bool _isFilled;
@@ -50,7 +51,7 @@ namespace Gameplay.DragDropPuzzle
         
         public void Highlight(bool highlight)
         {
-            blankSr.color = highlight ? highlightColor : Color.white;
+            blankSr.color = highlight ? _gameConfig.HighlightColor : Color.white;
         }
     }
 }
