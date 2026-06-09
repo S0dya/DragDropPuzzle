@@ -25,14 +25,22 @@ namespace Gameplay.DragDropPuzzle.Views
         
         private ObjectPool<HandItemView> _handItemViewPool;
         
-        private void Start()
+        private void Awake()
         {
-            _handItemViewPool = new ObjectPool<HandItemView>(
-                CreateHandItemView,
-                obj => obj.SetActive(true),
-                obj => obj.SetActive(false),
-                defaultCapacity: _gameConfig.HandItemPoolCapacity
-            );
+            InitializePool();
+        }
+
+        private void InitializePool()
+        {
+            if (_handItemViewPool == null)
+            {
+                _handItemViewPool = new ObjectPool<HandItemView>(
+                    CreateHandItemView,
+                    obj => obj.SetActive(true),
+                    obj => obj.SetActive(false),
+                    defaultCapacity: _gameConfig.HandItemPoolCapacity
+                );
+            }
         }
 
         private HandItemView CreateHandItemView()
@@ -66,7 +74,17 @@ namespace Gameplay.DragDropPuzzle.Views
 
         private void AddItem(ItemData itemData, int position)
         {
+            DebugManager.Log(DebugCategory.Gameplay, $"AddItem called - itemData: {itemData}, position: {position}");
+            DebugManager.Log(DebugCategory.Gameplay, $"_handItemViewPool is null: {_handItemViewPool == null}");
+
+            if (_handItemViewPool == null)
+            {
+                DebugManager.Log(DebugCategory.Gameplay, "_handItemViewPool is null! Initializing now.");
+                InitializePool();
+            }
+
             HandItemView view = _handItemViewPool.Get();
+            DebugManager.Log(DebugCategory.Gameplay, $"Got view from pool: {view != null}");
             view.SetItem(itemData);
             
             if (position >= _activeHandItemViews.Count)
