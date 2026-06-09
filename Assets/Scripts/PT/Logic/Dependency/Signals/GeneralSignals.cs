@@ -1,6 +1,4 @@
-﻿using Gameplay.BallDrop.Balls;
-using PT.Logic.PersistentScene;
-using UnityEngine;
+﻿using PT.Logic.PersistentScene;
 
 namespace PT.Logic.Dependency.Signals
 {
@@ -45,18 +43,6 @@ namespace PT.Logic.Dependency.Signals
     }
     
     public class NewHighestScoreReachedSignal { } 
-    
-    public class NewLowestBallSignal
-    {
-        public Ball Ball { get; private set; }
-        public NewLowestBallSignal(Ball ball) { Ball = ball; }
-    }
-    
-    public class BallReachedFinishSignal
-    {
-        public Ball Ball { get; private set; }
-        public BallReachedFinishSignal(Ball ball) { Ball = ball; }
-    }
     
     public class GameIntroTimerPassedSignal { } 
     public class GameSongEndingSignal { } 

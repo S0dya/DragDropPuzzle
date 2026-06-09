@@ -4,5 +4,9 @@ namespace Gameplay.DragDropPuzzle
     {
         LongTree,
         ShortTree,
+        Horse,
+        Bridge,
+        Arc,
+        Swings
     }
 }

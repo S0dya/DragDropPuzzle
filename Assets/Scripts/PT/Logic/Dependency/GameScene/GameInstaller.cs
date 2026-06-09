@@ -1,12 +1,5 @@
 using Gameplay;
-using Gameplay.Analytics;
-using Gameplay.BallDrop.Balls;
-using Gameplay.BallDrop.Balls.BallCollisionStrategy;
-using Gameplay.BallDrop.Configs;
-using Gameplay.BallDrop.Levels;
-using Gameplay.BallDrop.Levels.Generation;
-using Gameplay.BallDrop.Music;
-using Gameplay.BallDrop.UI;
+using Gameplay.DragDropPuzzle;
 using PT.Backend.Interfaces;
 using PT.GameplayAdditional.Cameras;
 using PT.GameplayAdditional.Vibrations;
@@ -37,19 +30,13 @@ namespace PT.Logic.Dependency.GameScene
             Container.BindInterfacesAndSelfTo<GameSoundsController>().AsSingle();
             Container.BindInterfacesAndSelfTo<GameVibrationsController>().AsSingle();
             
-            Container.Bind<IBallCollisionHandler>().To<LevelTriggerCollisionHandler>().AsSingle();
-            Container.Bind<IBallCollisionHandler>().To<ObstacleCollisionHandler>().AsSingle();
-            Container.Bind<IBallCollisionHandler>().To<FinishCollisionHandler>().AsSingle();
-
-            Container.Bind<ILevelGenerationService>().To<LengthLevelGenerationService>().AsSingle();
-            
-            Container.Bind<LevelSessionData>().AsSingle();
-            
-            Container.Bind<LevelGenerator>().FromComponentInHierarchy().AsSingle();
-            Container.Bind<BallsController>().FromComponentInHierarchy().AsSingle();
-            
-            Container.Bind<GameAudioController>().FromComponentInHierarchy().AsSingle();
-            Container.Bind<BallsNamesController>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<ItemsManager>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<HandItemsView>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<DraggableItem>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<HintManager>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<ParticleEffectPlayer>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<ProgressIndicator>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<PuzzleGameManager>().FromComponentInHierarchy().AsSingle();
 
 #if (UNITY_IOS || UNITY_ANDROID) && !UNITY_EDITOR
             if (_backendService != null && _backendService.IsReady)

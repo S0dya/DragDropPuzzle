@@ -21,9 +21,5 @@ MonoBehaviour:
   tutorialsSequencesConfig: {fileID: 11400000, guid: c504b4dd1f0cc184e9fe686cda16fc90, type: 2}
   stagesConfig: {fileID: 11400000, guid: 81d73fc7b5f90224e8442ade69771b85, type: 2}
   settingsInfosConfig: {fileID: 11400000, guid: 8242f9e786f6bf64f9e345807481cef6, type: 2}
-  levelsConfig: {fileID: 11400000, guid: ea16af15d3b4e274ab0727f85fe27cf1, type: 2}
-  indexLevelsConfig: {fileID: 11400000, guid: 65542710ee1a77e41929fb8f80bbc137, type: 2}
-  lengthLevelsConfig: {fileID: 11400000, guid: fb02675f077618d469cc398037aa7716, type: 2}
-  characterConfig: {fileID: 11400000, guid: ec86c358c63c9ef4aa8d285d0bc29386, type: 2}
-  songsConfig: {fileID: 11400000, guid: b19229dffd7d85b43aa73f153e1cb960, type: 2}
-  songVocalsConfig: {fileID: 11400000, guid: b7f96e0941cc795458943f2902ca5cdb, type: 2}
+  puzzleLevelConfig: {fileID: 11400000, guid: 436315e20986ebe48b74b8f3c117f1c7, type: 2}
+  itemsConfig: {fileID: 11400000, guid: 2d6385838a3534348a3dc260f42eca7c, type: 2}

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d704bd9829954d998fffd97f8def43df, type: 3}
+  m_Name: ItemsConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.DragDropPuzzle.Configs.ItemsConfig
+  itemDatas:
+  - name: 
+    itemType: 0
+    inGameSprite: {fileID: 21300000, guid: ba01b4b057ccd5c49aca50dcc7e2660b, type: 3}
+    handSprite: {fileID: 0}
+    gameSprite: {fileID: 0}
+    blankSprite: {fileID: 21300000, guid: 52e4c0f1a65f479409b2d81164b60027, type: 3}
+  - name: 
+    itemType: 1
+    inGameSprite: {fileID: 21300000, guid: aca338919b38c48458b617df1acb16bb, type: 3}
+    handSprite: {fileID: 0}
+    gameSprite: {fileID: 0}
+    blankSprite: {fileID: 21300000, guid: 13d8547a3af90e941a302d050943a98a, type: 3}
+  - name: 
+    itemType: 2
+    inGameSprite: {fileID: 21300000, guid: 25055d0b5c9a5954a9467fce2e1c8108, type: 3}
+    handSprite: {fileID: 0}
+    gameSprite: {fileID: 0}
+    blankSprite: {fileID: 21300000, guid: f59e01f0d52aa85499e447eb9806f596, type: 3}
+  - name: 
+    itemType: 3
+    inGameSprite: {fileID: 21300000, guid: fc9e13da0360b0344bd26a5719ef15b8, type: 3}
+    handSprite: {fileID: 0}
+    gameSprite: {fileID: 0}
+    blankSprite: {fileID: 21300000, guid: 4559e57e6b0778742a9ceb501dd7332b, type: 3}
+  - name: 
+    itemType: 4
+    inGameSprite: {fileID: 21300000, guid: e9ad3c15a91e42c4abe3bf328e57fda2, type: 3}
+    handSprite: {fileID: 0}
+    gameSprite: {fileID: 0}
+    blankSprite: {fileID: 21300000, guid: 5700f4094d2237a40a63d7130a16023d, type: 3}
+  - name: 
+    itemType: 5
+    inGameSprite: {fileID: 21300000, guid: f1eb5e7fc34036544ba1c1eac750bf2e, type: 3}
+    handSprite: {fileID: 0}
+    gameSprite: {fileID: 0}
+    blankSprite: {fileID: 21300000, guid: a4a82eaa5395bcd4b9d7095e46d852a9, type: 3}

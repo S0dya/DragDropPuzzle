@@ -1,28 +1,27 @@
 using System;
-using PT.UI.Buttons;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Gameplay.DragDropPuzzle
 {
-    public class HandItemView : MonoBehaviour
+    public class HandItemView : MonoBehaviour, IPointerDownHandler
     {
-        [SerializeField] private BasicButton mainButton;
         [SerializeField] private Image itemImage;
         
         public ItemData ItemData { get; private set; }
         
-        public event Action<HandItemView> OnPressed;
+        public event Action<HandItemView, Vector2> OnPressedDown;
 
-        private void Start()
+        public void OnPointerDown(PointerEventData eventData)
         {
-            mainButton.SetOnClick(() => OnPressed?.Invoke(this));
+            OnPressedDown?.Invoke(this, eventData.position);
         }
         
         public void SetItem(ItemData itemData)
         {
             ItemData = itemData;
-            itemImage.sprite = itemData.HandSprite;
+            itemImage.sprite = itemData.HandSprite != null ? itemData.HandSprite : itemData.InGameSprite;
         }
     }
 }

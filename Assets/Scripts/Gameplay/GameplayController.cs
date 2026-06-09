@@ -29,7 +29,6 @@ namespace Gameplay
         private void Awake()
         {
             _signalBus.Subscribe<GameStartedSignal>(OnGameStarted);
-            _signalBus.Subscribe<BallReachedFinishSignal>(OnBallReachedFinish);
         }
 
         private void OnGameStarted()
@@ -41,22 +40,6 @@ namespace Gameplay
             _inputManager.OnRelease += TryPerformPush;
         }
         
-        private void OnBallReachedFinish(BallReachedFinishSignal signal)
-        {
-            if (_gameEnded) return;
-            
-            Victory();
-            
-            // if (signal.Ball.IsPlayer)
-            // {
-            //     Victory();
-            // }
-            // else
-            // {
-            //     _otherBallsReachedFinishAmount++;
-            // }
-        }
-
         private async void Victory()
         {
             if (_gameEnded) return;
@@ -115,7 +98,6 @@ namespace Gameplay
         private void OnDestroy()
         {
             _signalBus.Unsubscribe<GameStartedSignal>(OnGameStarted);
-            _signalBus.Unsubscribe<BallReachedFinishSignal>(OnBallReachedFinish);
         }
     }
 }

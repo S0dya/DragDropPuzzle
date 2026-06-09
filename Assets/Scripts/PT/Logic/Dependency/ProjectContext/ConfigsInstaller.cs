@@ -1,4 +1,5 @@
-using Gameplay.BallDrop.Configs;
+using Gameplay.DragDropPuzzle;
+using Gameplay.DragDropPuzzle.Configs;
 using PT.GameplayAdditional.Progression;
 using PT.Logic.Configs;
 using PT.Tools.Addressables;
@@ -24,12 +25,8 @@ namespace PT.Logic.Dependency.ProjectContext
         [SerializeField] private StagesConfig stagesConfig;
         [SerializeField] private SettingsInfosConfig settingsInfosConfig;
         [Space]
-        [SerializeField] private LevelsConfig levelsConfig;
-        [SerializeField] private IndexLevelsConfig indexLevelsConfig;
-        [SerializeField] private LengthLevelsConfig lengthLevelsConfig;
-        [SerializeField] private CharacterConfig characterConfig;
-        [SerializeField] private SongsConfig songsConfig;
-        [SerializeField] private SongVocalsConfig songVocalsConfig;
+        [SerializeField] private PuzzleLevelConfig puzzleLevelConfig;
+        [SerializeField] private ItemsConfig itemsConfig;
         
         public override void InstallBindings()
         {
@@ -44,12 +41,8 @@ namespace PT.Logic.Dependency.ProjectContext
             Container.Bind<StagesConfig>().FromInstance(stagesConfig).AsSingle();
             Container.Bind<SettingsInfosConfig>().FromInstance(settingsInfosConfig).AsSingle();
             
-            Container.Bind<LevelsConfig>().FromInstance(levelsConfig).AsSingle();
-            Container.Bind<IndexLevelsConfig>().FromInstance(indexLevelsConfig).AsSingle();
-            Container.Bind<LengthLevelsConfig>().FromInstance(lengthLevelsConfig).AsSingle();
-            Container.Bind<CharacterConfig>().FromInstance(characterConfig).AsSingle();
-            Container.Bind<SongsConfig>().FromInstance(songsConfig).AsSingle();
-            Container.Bind<SongVocalsConfig>().FromInstance(songVocalsConfig).AsSingle();
+            Container.Bind<PuzzleLevelConfig>().FromInstance(puzzleLevelConfig).AsSingle();
+            Container.Bind<ItemsConfig>().FromInstance(itemsConfig).AsSingle();
         }
     }
 }

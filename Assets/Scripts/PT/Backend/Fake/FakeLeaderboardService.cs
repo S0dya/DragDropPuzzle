@@ -131,16 +131,18 @@ namespace PT.Backend.Fake
         private void EnsureLoaded()
         {
             if (_names != null) return;
+
+            return;
             
-            var asset = _assetResolver.Get<TextAsset>(AssetKey.LeaderboardFakeNicknames);
-            
-            _names = asset.text
-                .Split('\n')
-                .Select(n => n.Trim())
-                .Where(n => n.Length > 0)
-                .ToList();
-            
-            DebugManager.Log(DebugCategory.Leaderboards, $"Loaded {_names.Count} fake nicknames");
+            // var asset = _assetResolver.Get<TextAsset>(AssetKey.LeaderboardFakeNicknames);
+            //
+            // _names = asset.text
+            //     .Split('\n')
+            //     .Select(n => n.Trim())
+            //     .Where(n => n.Length > 0)
+            //     .ToList();
+            //
+            // DebugManager.Log(DebugCategory.Leaderboards, $"Loaded {_names.Count} fake nicknames");
         }
     }
 }

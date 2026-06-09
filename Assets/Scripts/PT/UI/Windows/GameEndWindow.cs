@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using Gameplay.BallDrop.Balls;
-using Gameplay.BallDrop.Datas;
-using Gameplay.BallDrop.UI;
 using PT.Logic.Ads;
 using PT.Logic.Configs;
 using PT.Logic.Dependency.Signals;
@@ -30,17 +27,12 @@ namespace PT.UI.Windows
         [SerializeField] private Button menuButton;
         [Space]
         [SerializeField] private Sequencer[] starsSequencers;
-        [SerializeField] private Transform statsContainer;
-        [SerializeField] private StatisticsView statItemPrefab;
 
         [Inject (Id = "Game")] private WindowsManager _windowsManager;
         [Inject] private LoadingManager _loadingManager;
         [Inject] private AdsManager _adsManager;
         [Inject] private SaveManager _saveManager;
         [Inject] private SignalBus _signalBus;
-        [Inject] private BallStatisticsManager _ballStatisticsManager;
-        [Inject] private CurrencyManager _currencyManager;
-        [Inject] private GameConfig _gameConfig;
 
         private CancellationTokenSource _openCts;
         
@@ -104,10 +96,6 @@ namespace PT.UI.Windows
             _openCts?.Cancel();
             _openCts = new CancellationTokenSource();
 
-            DisplayStatistics();
-            
-            _currencyManager.Add(CurrencyType.Gold, _gameConfig.GoldAmountForLevelFinish);
-            
             try
             {
                 foreach (var star in starsSequencers)
@@ -117,27 +105,6 @@ namespace PT.UI.Windows
                 }
             }
             catch (OperationCanceledException) { }
-        }
-
-        private void DisplayStatistics()
-        {
-            foreach (Transform child in statsContainer) Destroy(child.gameObject);
-
-            Dictionary<CharacterData, float> stats = _ballStatisticsManager.GetStatistics();
-
-            float totalTime = 0f;
-            foreach (var kvp in stats) totalTime += kvp.Value;
-
-            var sortedStats = stats.OrderByDescending(kvp => kvp.Value).ToList();
-
-            foreach (var kvp in sortedStats)
-            {
-                var statItem = Instantiate(statItemPrefab, statsContainer);
-
-                float percent = totalTime > 0 ? kvp.Value / totalTime : 0f;
-
-                statItem.SetData(kvp.Key, percent);
-            }
         }
     }
 }

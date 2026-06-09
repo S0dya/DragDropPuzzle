@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d14304fc0045eb9e7825470736c7f2, type: 3}
   m_Name: Game Config
   m_EditorClassIdentifier: 
-  platformType: 2
+  platformType: 3
   loadingAnimationDuration: 0.01
   addressablesDiagnosticsInterval: 60
   cloudSaveCooldownSeconds: 120
@@ -33,3 +33,4 @@ MonoBehaviour:
   pushCooldownDuration: 3
   trajectoryPoints: 50
   trajectoryTimeStep: 0.05
+  goldAmountForLevelFinish: 150
