@@ -31,6 +31,7 @@ namespace Gameplay.DragDropPuzzle.Managers
         private List<SettableItem> _settableItems = new();
         private ItemData _currentDraggedItem;
         private bool _isDragging = false;
+        private bool _isProcessing = false;
         private SettableItem _currentTargetSlot;
         private Vector2 _startWorldPosition;
 
@@ -67,12 +68,13 @@ namespace Gameplay.DragDropPuzzle.Managers
 
         private void OnItemSelected(ItemData itemData, Vector2 pointerScreenPosition)
         {
-            if (_isDragging) return;
+            if (_isDragging || _isProcessing) return;
             
             DebugManager.Log(DebugCategory.Gameplay, $"OnItemSelected: {itemData}");
             
             _currentDraggedItem = itemData;
             _isDragging = true;
+            _isProcessing = true;
             
             foreach (var slot in _settableItems)
             {
@@ -143,6 +145,9 @@ namespace Gameplay.DragDropPuzzle.Managers
 
         private void OnItemReachedTarget(DraggableItem draggableItem)
         {
+            _isProcessing = false;
+            _isDragging = false;
+            
             _handItemsView.RemoveItem(_currentDraggedItem);
             _handItemsView.SetHandClickable(true);
             _progressIndicator.OnPiecePlaced();
@@ -156,6 +161,9 @@ namespace Gameplay.DragDropPuzzle.Managers
 
         private void OnItemReturned(DraggableItem draggableItem)
         {
+            _isProcessing = false;
+            _isDragging = false;
+            
             _handItemsView.AddItem(_currentDraggedItem);
             _handItemsView.SetHandClickable(true);
             _currentDraggedItem = null;

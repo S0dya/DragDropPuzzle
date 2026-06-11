@@ -21,6 +21,8 @@ namespace Gameplay.DragDropPuzzle.Components
         private bool _isLocked;
         private bool _isSnapped;
         
+        private Tween _currentTween;
+        
         public event Action<DraggableItem> OnReachedTarget;
         public event Action<DraggableItem> OnReturned;
         public ItemData ItemData => _itemData;
@@ -30,16 +32,22 @@ namespace Gameplay.DragDropPuzzle.Components
 
         public void SetItem(ItemData itemData)
         {
+            KillCurrentTween();
+            
             _itemData = itemData;
             spriteRenderer.sprite = itemData.InGameSprite;
             _originalPosition = transform.position;
             _isSnapped = false;
+            _isLocked = false;
+            _isDragging = false;
             gameObject.SetActive(true);
         }
         
         public void StartDrag(Vector2 screenPosition)
         {
             if (_isLocked) return;
+            
+            KillCurrentTween();
             
             _isDragging = true;
             _isSnapped = false;
@@ -110,11 +118,13 @@ namespace Gameplay.DragDropPuzzle.Components
         {
             if (_isLocked) return;
             
+            KillCurrentTween();
+            
             _isDragging = false;
             
             float animDuration = duration > 0 ? duration : _gameConfig.AnimationDuration;
             
-            transform.DOMove(position, animDuration)
+            _currentTween = transform.DOMove(position, animDuration)
                 .SetEase(Ease.OutBack)
                 .OnComplete(() =>
                 {
@@ -130,9 +140,11 @@ namespace Gameplay.DragDropPuzzle.Components
         {
             if (_isLocked) return;
             
+            KillCurrentTween();
+            
             _isDragging = false;
             
-            transform.DOMove(returnPosition, _gameConfig.AnimationDuration)
+            _currentTween = transform.DOMove(returnPosition, _gameConfig.AnimationDuration)
                 .SetEase(Ease.OutBack)
                 .OnComplete(() =>
                 {
@@ -144,6 +156,20 @@ namespace Gameplay.DragDropPuzzle.Components
         public void HideItem()
         {
             gameObject.SetActive(false);
+        }
+
+        private void KillCurrentTween()
+        {
+            if (_currentTween != null && _currentTween.IsActive())
+            {
+                _currentTween.Kill();
+                _currentTween = null;
+            }
+        }
+
+        private void OnDestroy()
+        {
+            KillCurrentTween();
         }
 
         private void Update()
